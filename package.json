@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "alarivan <alarivan@pm.me>",
   "dependencies": {
+    "@brainhubeu/react-carousel": "^1.10.27",
+    "@types/brainhubeu__react-carousel": "^1.10.0",
     "gatsby": "^2.15.7",
     "gatsby-image": "^2.2.17",
     "gatsby-plugin-manifest": "^2.2.13",
@@ -14,11 +16,15 @@
     "gatsby-plugin-styled-components": "^3.1.5",
     "gatsby-plugin-typescript": "^2.1.6",
     "gatsby-source-filesystem": "^2.1.21",
+    "gatsby-transformer-remark": "^2.6.30",
     "gatsby-transformer-sharp": "^2.2.13",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
-    "styled-components": "^4.3.2"
+    "react-icons": "^3.7.0",
+    "styled-components": "^4.3.2",
+    "styled-normalize": "^8.0.6",
+    "typeface-roboto": "^0.0.75"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.1.0",
