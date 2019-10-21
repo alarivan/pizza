@@ -1,5 +1,6 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
+import Qty from "./Qty"
 
 const Name = styled.h1`
   margin-top: 0.5rem;
@@ -13,7 +14,7 @@ const Price = styled.h3`
 
 const Description = styled.p`
   font-size: 0.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 `
 
 const Submit = styled.button`
@@ -41,6 +42,19 @@ const Text = styled.span`
 interface Props {}
 
 const Info: React.FC<Props> = () => {
+  const [qty, setQty] = useState(1)
+
+  const qtyValueLabel = {
+    singular: "slice",
+    plural: "slices",
+  }
+
+  const handleChange = (value: number) => {
+    if (value > 0) {
+      setQty(value)
+    }
+  }
+
   return (
     <div>
       <Name>Brooklyn Classic</Name>
@@ -49,7 +63,12 @@ const Info: React.FC<Props> = () => {
         Because you deserve the most sizzling of them all.
         <br /> Nothin' mo' nothin' less.
       </Description>
-      <div>Quantity</div>
+      <Qty
+        qty={qty}
+        label="Quantity"
+        valueLabel={qtyValueLabel}
+        onChange={handleChange}
+      />
       <Submit>onwards with my pizza</Submit>
       <Text>30 days money back guarantee</Text>
     </div>
