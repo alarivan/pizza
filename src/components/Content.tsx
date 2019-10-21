@@ -36,7 +36,7 @@ const Title = styled.h2`
   font-size: 2.25rem;
   text-align: center;
   max-width: 500px;
-  margin: 2rem auto;
+  margin: 2rem auto 0;
 `
 
 interface Props {}
