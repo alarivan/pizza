@@ -2,6 +2,7 @@ import React, { ReactNode } from "react"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import GlobalStyles from "./styled/global"
+import { Normalize } from "styled-normalize"
 import Header from "./header"
 
 type Props = {
@@ -27,6 +28,7 @@ const Layout: React.FC<Props> = ({ children }) => {
 
   return (
     <>
+      <Normalize />
       <GlobalStyles />
       <Header siteTitle={data.site.siteMetadata.title} />
       <StyledContainer>
