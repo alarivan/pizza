@@ -3,6 +3,7 @@ import React from "react"
 import styled from "styled-components"
 import { Container } from "./styled/common"
 import Logo from "./Header/Logo"
+import MainMenu from "./Header/MainMenu"
 
 const SHeader = styled.header`
   background: #fff;
@@ -28,6 +29,7 @@ const Header: React.FC = () => (
       <HeaderLink to="/">
         <Logo />
       </HeaderLink>
+      <MainMenu />
     </HeaderContainer>
   </SHeader>
 )
