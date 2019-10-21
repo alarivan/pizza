@@ -1,6 +1,7 @@
 import React from "react"
 import styled, { css } from "styled-components"
 import PizzaPattern from "../images/pizza-pattern.png"
+import Carousel from "./Content/Carousel"
 
 const SContent = styled.div`
   position: relative;
@@ -48,6 +49,7 @@ const Content: React.FC<Props> = () => {
         We completely re-engineered the pizza just for you. So you can eat it
         all day.
       </Title>
+      <Carousel />
     </SContent>
   )
 }

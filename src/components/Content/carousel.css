@@ -1,0 +1,19 @@
+.BrainhubCarousel .BrainhubCarousel__trackContainer .BrainhubCarousel__track {
+    padding: 2rem 0;
+    position: relative;
+}
+
+.BrainhubCarousel__customArrows {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.BrainhubCarousel__customArrows.BrainhubCarousel__custom-arrowLeft {
+    left: 50px;
+}
+
+.BrainhubCarousel__customArrows.BrainhubCarousel__custom-arrowRight {
+    right: 50px;
+}
