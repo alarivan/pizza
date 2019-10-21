@@ -5,15 +5,14 @@ import GlobalStyles from "./styled/global"
 import { Normalize } from "styled-normalize"
 import Header from "./header"
 
+const SLayout = styled.div`
+  max-width: 1440px;
+  margin: 0 auto;
+`
+
 type Props = {
   children: ReactNode
 }
-
-const StyledContainer = styled.div`
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0 1.0875rem 1.45rem;
-`
 
 const Layout: React.FC<Props> = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -27,19 +26,12 @@ const Layout: React.FC<Props> = ({ children }) => {
   `)
 
   return (
-    <>
+    <SLayout>
       <Normalize />
       <GlobalStyles />
       <Header siteTitle={data.site.siteMetadata.title} />
-      <StyledContainer>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </StyledContainer>
-    </>
+      <main>{children}</main>
+    </SLayout>
   )
 }
 
