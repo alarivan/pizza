@@ -2,6 +2,7 @@ import React from "react"
 import styled, { css } from "styled-components"
 import PizzaPattern from "../images/pizza-pattern.png"
 import Carousel from "./Content/Carousel"
+import Banner from "./Content/Banner"
 
 const SContent = styled.div`
   position: relative;
@@ -50,6 +51,7 @@ const Content: React.FC<Props> = () => {
         all day.
       </Title>
       <Carousel />
+      <Banner />
     </SContent>
   )
 }
