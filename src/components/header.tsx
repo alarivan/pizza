@@ -1,39 +1,32 @@
 import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
+import { Container } from "./styled/common"
 
-type Props = {
-  siteTitle: string
-}
-
-const StyledHeader = styled.header`
-  background: rebeccapurple;
-  margin-bottom: 1.45rem;
+const SHeader = styled.header`
+  background: #fff;
+  margin-bottom: 3rem;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 `
 
-const StyledHeaderInner = styled.div`
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 1.45rem 1.0875rem;
+const HeaderContainer = styled(Container)`
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
 `
 
-const StyledHeaderH1 = styled.h1`
-  margin: 0 auto;
-`
-
-const StyledHeaderLink = styled(Link)`
+const HeaderLink = styled(Link)`
   color: white;
   text-decoration: none;
+  margin-right: 1.5rem;
 `
 
-const Header: React.FC<Props> = ({ siteTitle }) => (
-  <StyledHeader>
-    <StyledHeaderInner>
-      <StyledHeaderH1>
-        <StyledHeaderLink to="/">{siteTitle}</StyledHeaderLink>
-      </StyledHeaderH1>
-    </StyledHeaderInner>
-  </StyledHeader>
+const Header: React.FC = () => (
+  <SHeader>
+    <HeaderContainer>
+      <HeaderLink to="/">pizza</HeaderLink>
+    </HeaderContainer>
+  </SHeader>
 )
 
 export default Header
