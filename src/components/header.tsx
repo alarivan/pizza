@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import { Container } from "./styled/common"
+import Logo from "./Header/Logo"
 
 const SHeader = styled.header`
   background: #fff;
@@ -24,7 +25,9 @@ const HeaderLink = styled(Link)`
 const Header: React.FC = () => (
   <SHeader>
     <HeaderContainer>
-      <HeaderLink to="/">pizza</HeaderLink>
+      <HeaderLink to="/">
+        <Logo />
+      </HeaderLink>
     </HeaderContainer>
   </SHeader>
 )
