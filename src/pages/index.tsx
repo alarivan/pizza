@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Product from "../components/Product"
 import { Container } from "../components/styled/common"
+import Content from "../components/Content"
 
 const IndexPage = () => (
   <Layout>
@@ -11,6 +12,7 @@ const IndexPage = () => (
     <Container>
       <Product />
     </Container>
+    <Content />
   </Layout>
 )
 
