@@ -5,7 +5,7 @@ import { Normalize } from "styled-normalize"
 import Header from "./header"
 
 const SLayout = styled.div`
-  max-width: 1440px;
+  max-width: 1800px;
   margin: 0 auto;
 `
 
