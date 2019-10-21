@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/pizza",
   siteMetadata: {
     title: `Gatsby Basic TypeScript Starter`,
     description: `Kick off your next, great Gatsby project with this starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
